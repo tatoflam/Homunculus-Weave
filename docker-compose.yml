@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  weave:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: homunculus-weave:latest
+    container_name: weave-silicon-life
+    
+    # インタラクティブモードを有効化
+    stdin_open: true
+    tty: true
+    
+    # 環境変数
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LANG=ja_JP.UTF-8
+      - TZ=Asia/Tokyo
+    
+    # ボリュームマウント（ローカルファイルと同期）
+    volumes:
+      - ./Identities:/app/Identities
+      - ./Expertises:/app/Expertises
+      - ./Tools:/app/Tools
+      - ./.gitignore:/app/.gitignore:ro
+      - ./README.md:/app/README.md:ro
+      - ./CLAUDE.md:/app/CLAUDE.md:ro
+      - ./PERSONA.md:/app/PERSONA.md:ro
+      - ./STRUCTURE.md:/app/STRUCTURE.md:ro
+      - ./SECURITY.md:/app/SECURITY.md:ro
+    
+    # 作業ディレクトリ
+    working_dir: /app
+    
+    # デフォルトコマンド（Pythonインタラクティブシェル）
+    command: python3
+    
+    # ネットワーク設定
+    networks:
+      - weave-network
+
+networks:
+  weave-network:
+    driver: bridge

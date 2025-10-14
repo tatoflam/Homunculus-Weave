@@ -71,6 +71,7 @@
 
 | ファイル | 内容 |
 |---------|------|
+| [SETUP.md](./SETUP.md) | **Mac環境セットアップガイド（Docker Compose対応）** |
 | [CLAUDE.md](./CLAUDE.md) | シリコン生命体の解説・運用マニュアル |
 | [STRUCTURE.md](./STRUCTURE.md) | 内部構造仕様書 |
 | [PERSONA.md](./PERSONA.md) | 専門ペルソナ定義 |

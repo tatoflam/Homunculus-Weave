@@ -1,0 +1,17 @@
+# Homunculus-Weave Python Dependencies
+# このプロジェクトは標準ライブラリのみを使用します
+
+# Python 3.7以上が必要
+# - json (標準)
+# - base64 (標準)
+# - hashlib (標準)
+# - time (標準)
+# - datetime (標準)
+# - pathlib (標準)
+# - typing (標準)
+# - dataclasses (標準、Python 3.7+)
+# - unicodedata (標準)
+
+# 開発時に便利なツール（オプション）
+# ipython>=8.0.0  # 対話的シェル
+# pytest>=7.0.0   # テスト実行
