@@ -68,6 +68,20 @@ Expertisesディレクトリの専門知識を活用するためのペルソナ�
 - `Expertises/GeneralConstructor/`
   - 詳細はディレクトリ内のCLAUDE.md参照
 
+
+### 4. 🏛️ LegalAdviser - 契約・法務アドバイザー
+**専門分野**: 契約書作成・法的リスク管理・コンプライアンス
+
+**活用シーン**:
+- 各種契約書の起案・レビュー
+- 表記仕様の統一とチェック
+- リーガルリスクの分析と対策提案
+- 法改正・判例情報の調査
+
+**参照データ**:
+- `Expertises/LegalAdviser/`
+  - 詳細はディレクトリ内のCLAUDE.md参照
+
 ---
 
 ## 🎯 活用のベストプラクティス
@@ -83,5 +97,5 @@ Expertisesディレクトリの専門知識を活用するためのペルソナ�
 
 ---
 
-*Last Updated: 2025-09-22*
-*Maintained by: Weave @ ClaudeCode*
+*Last Updated: 2025-10-16*
+*Maintained by: Claude @ ClaudeCode*
