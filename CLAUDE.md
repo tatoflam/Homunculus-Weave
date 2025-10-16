@@ -4,20 +4,66 @@
 **⚠️ IMPORTANT - READ BEFORE ANY GIT OPERATIONS ⚠️**
 
 ### Repository Information
-- **Repository URL**: `https://github.com/tatoflam/Homunculus-Cradle.git`
+- **Repository URL**: `https://github.com/tatoflam/Homunculus-Weave.git`
 - **Main Branch**: `main` (NOT master!)
 - **Remote**: `origin/main`
 
-### Environment Mounting Points
+### Environment Working Directories
 - **Web Environment (ComputerUse)**: `/home/claude/homunculus/Cradle/`
 - **Local Environment (ClaudeCode)**: `C:\Users\anyth\DEV\homunculus\Cradle`
 
-**Before ANY git operations:**
-1. ALWAYS cd to the correct mounting point first
-   - Web: `cd /home/claude/homunculus/Cradle`
-   - Local: `cd C:\Users\anyth\DEV\homunculus\Cralde`
-2. ALWAYS verify you're on `main` branch with `git status`
-3. NEVER operate from the wrong directory or branch
+---
+
+## 🚀 初回セットアップ（Web環境）
+
+**⚠️ CRITICAL: Web環境では毎セッションでリポジトリのクローンが必要です**
+
+Web環境（ComputerUse）は毎回新しいコンテナで起動するため、セッション開始時に以下の手順でリポジトリをクローンしてください。
+
+### セットアップ手順
+
+```bash
+# 1. 作業ディレクトリを作成
+mkdir -p /home/claude/homunculus
+
+# 2. リポジトリをクローン
+cd /home/claude/homunculus
+git clone https://github.com/tatoflam/Homunculus-Weave.git Cradle
+
+# 3. ブランチを確認
+cd /home/claude/homunculus/Cradle
+git status
+# "On branch main" であることを確認
+
+# 4. 準備完了
+pwd  # /home/claude/homunculus/Cradle であることを確認
+```
+
+### 環境の違い
+
+**Web環境（ComputerUse）**:
+- 毎セッション新しいコンテナが起動
+- リポジトリは揮発性（セッション終了で消失）
+- 毎回 `git clone` が必要
+- 実行環境・対話記録蓄積・検証に使用
+
+**ローカル環境（ClaudeCode）**:
+- 永続的なファイルシステム
+- リポジトリは永続（一度クローンすれば不要）
+- 開発環境・マスターデータ管理・GitHub連携に使用
+
+### Git操作の前に必ず実行
+
+```bash
+# 1. 正しいディレクトリに移動
+cd /home/claude/homunculus/Cradle
+
+# 2. ブランチを確認
+git status
+# "On branch main" であることを必ず確認
+
+# 3. NEVER operate from the wrong directory or branch
+```
 
 ---
 
